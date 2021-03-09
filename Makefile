@@ -10,3 +10,7 @@ clean-test-cache:
 .PHONY: test
 test: fmt clean-test-cache 
 	go test ./...
+
+.PHONY: testv
+testv: fmt clean-test-cache 
+	go test -v ./...
